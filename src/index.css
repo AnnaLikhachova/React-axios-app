@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  margin: 20px;
+  background-color: darkgrey;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  height: 50px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.menu-nav {
+  padding: 10px;
+  font-size: 20px;
+  background: rgb(170, 44, 75);
+  border: rgb(43, 36, 36) solid 3px;
+  border-radius: 20px;
+}
+
+.menu-nav a{
+  color: snow;
+  text-decoration: none;
+}
+
+.header .menu-nav:hover {
+  background: rgb(122, 115, 117);
+}
+
+.welcome-message {
+  background-color: gainsboro;
+  height: 100%;
+}
+
+.welcome-message h1 {
+  font-size: 25px;
+  padding: 20px;
+}
+
+.movie-search-nav h1 {
+  padding: 20px;
+}
+
+.main-search {
+  margin-top: 10px;
+  padding-left: 10px;
+  border: black solid 2px;
+  margin-left: 20px;
+  width: 400px;
+}
+
+.main-search input {
+  width: 90%;
+}
+
+.main-search button {
+  background: darkgrey;
+  border: black solid 1px;
+}
+
+.search-title{
+  margin: 20px 20px 0;
+}
+
+.card-wrapper {
+  margin-top: 50px;
+}
+
+.card-list {
+  margin-top: 50px;
+}
+
+.card-wrapper .card {
+  display: inline-block;
+  width: 240px;
+  vertical-align: top;
+  margin: 20px 15px;
+}
+
+.card-wrapper .card-image {
+   height: 350px;
+   position: relative;
+   border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-wrapper .card-image img {
+    height: 100%;
+    width: 100%;
+ }
+
+ .card .badge {
+    position: absolute;
+    left: 50%;
+    bottom: -3%;
+    transform: translateX(-50%);
+    padding: 7px 25px;
+    font-size: 14px;
+ }
+
+ .image-container {
+  padding-left: 50px;
+  padding-top: 20px;
+ }
+
+ .image-poster {
+  height: 470px;
+  background-repeat: no-repeat;
+ }
+
+ .movie-cards-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background: ghostwhite;
+  border: rgb(136, 132, 132) solid 3px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin: 5px;
+ }
+
+ .movie-info {
+   padding: 10px;
+ }
+
+ .movie-info h2 {
+   padding-left: 20px;
+   text-decoration: underline;
+ }
+
+ .movie-info h1 small h4 {
+  padding-left: 20px;
+}
+
+ .search-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(197, 204, 211);
+  margin-top: 20px;
+  padding: 10px;
+ }
+
+ .buttons-container {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .add-towishlist-button {
+  text-align: center;
+  background: rgb(118, 118, 131);
+  border: rgb(43, 36, 36) solid 3px;
+  border-radius: 20px;
+  width: 150px;
+  color: aliceblue;
+ }
+
+ .delete-fromwishlist-button {
+  text-align: center;
+  background: rgb(170, 44, 75);
+  border: rgb(43, 36, 36) solid 3px;
+  border-radius: 20px;
+  width: 150px;
+  color: aliceblue;
+}
+
+.search-results .hide-delete {
+  display: none;
+}
+
+.wishlist-results .hide-add {
+  display: none;
+}
+
+.wishlist-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(68, 104, 141);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.wishlist-message {
+  font-size: 25px;
+  padding: 20px;
+}
+
+.footer-container{
+background-color:  rgb(170, 44, 75);
+height: 60px;
+}
+
+.footer-tools-box{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(170, 44, 75);
+  color: aliceblue;
+  margin: 5px 0 5px 0;
+  height: 80%;
+}
+
+.footer-tools-dev {
+padding: 20px;
+}
+
+.footer-tools {
+  padding: 15px;
+  size: 10px;
+  font-size: 25px;
+}
+
+.fab-react{
+  margin-left: 50px;
+}
+
+.fab-react img {
+  height: 70px;
+  padding-right: 100px;
+}
+
+.how-to-host {
+  width: 60%;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.cmd {
+  background-color: rgb(192, 190, 190);
+  padding: 20px;
+}
+
+.create-api {
+  width: 60%;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.cmd-axios img{
+  height: 900px;
+}
+
+@media (max-width: 870px) {
+  .header{
+    height: 200px;
+  }
+
+   .movie-cards-container {
+     width: 100%;
+     margin: auto;
+   }
+
+   .image-container {
+     padding-left: 20px;
+   }
+
+   .fab-react img {
+     padding-right: 60px;
+   }
+
+   .buttons-container {
+     margin-top: 10px;
+     margin-bottom: 10px;
+   }
+
+   .cmd-axios img {
+     height: 500px;
+   }
+
+   .main-search {
+     width: 330px;
+   }
+
+   .main-search input {
+     width: 80%;
+   }
+}
